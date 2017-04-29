@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".PlayingActivity" android:label="@string/playing" />
+        <activity android:name=".AlbumsActivity" android:label="@string/albums" />
+        <activity android:name=".PlaylistsActivity" android:label="@string/playlists" />
+        <activity android:name=".ArtistsActivity" android:label="@string/artists" />
+        <activity android:name=".SearchActivity" android:label="@string/search" />
+        <activity android:name=".BuyOnlineActivity" android:label="@string/buy_online" />
     </application>
 
 </manifest>

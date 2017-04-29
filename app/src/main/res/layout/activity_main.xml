@@ -8,10 +8,6 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.user.musicalstructureapp.MainActivity">
 
         <LinearLayout
@@ -19,62 +15,61 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout style="@style/TitleBar">
+
+                <ImageView
+                    style="@style/IconApp"
+                    android:src="@drawable/app_icon"></ImageView>
+
+                <TextView
+                    style="@style/Title"
+                    android:text="@string/title" />
+
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
             <TextView
-                style="@style/Title"
-                android:layout_marginBottom="20dp"
-                android:text="@string/title" />
+                android:id="@+id/nowPlaying"
+                style="@style/TextView"
+                android:text="@string/now_playing" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
+            <View style="@style/Line" />
 
-                <Button
-                    android:id="@+id/btnPlaying"
-                    style="@style/btn"
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/play"
-                    android:text="@string/playing" />
+            <TextView
+                android:id="@+id/albums"
+                style="@style/TextView"
+                android:text="@string/albums" />
 
-                <Button
-                    style="@style/btn"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/albums"
-                    android:text="@string/albums" />
+            <View style="@style/Line" />
 
-                <Button
-                    style="@style/btn"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/playlists"
-                    android:text="@string/playlists" />
+            <TextView
+                android:id="@+id/playlists"
+                style="@style/TextView"
+                android:text="@string/playlists" />
 
-            </LinearLayout>
+            <View style="@style/Line" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/artists"
+                style="@style/TextView"
+                android:text="@string/artists" />
 
-                <Button
-                    style="@style/btn"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/artists"
-                    android:text="@string/artists" />
+            <View style="@style/Line" />
 
-                <Button
-                    style="@style/btn"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/search"
-                    android:text="@string/search" />
+            <TextView
+                android:id="@+id/search"
+                style="@style/TextView"
+                android:text="@string/search_text" />
 
-                <Button
-                    style="@style/btn"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/buy_music"
-                    android:text="@string/buy_online" />
-            </LinearLayout>
+            <View style="@style/Line" />
+
+            <TextView
+                android:id="@+id/buy_online"
+                style="@style/TextView"
+                android:text="@string/buy_online" />
+
+            <View style="@style/Line" />
 
             <ImageView
                 style="@style/img"

@@ -11,22 +11,22 @@ import android.widget.ImageButton;
  * Created by Katia on 29/04/2017.
  */
 
-public class PlayingActivity extends AppCompatActivity {
+public class PlaylistsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_playing);
+        setContentView(R.layout.activity_playlists);
 
-        //Find view that shows Playlists button
-        Button playlists = (Button) findViewById(R.id.btnPlaylists);
+        //Find view that shows Now Playing button
+        Button playing = (Button) findViewById(R.id.btnNowPlaying);
 
         //Set a clicklistener on that button
-        playlists.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Playlists button is clicked on.
+        playing.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the Now Playing button is clicked on.
             @Override
             public void onClick(View view) {
-                Intent playlistsIntent = new Intent(PlayingActivity.this, PlaylistsActivity.class);
-                startActivity(playlistsIntent);
+                Intent playingIntent = new Intent(PlaylistsActivity.this, PlayingActivity.class);
+                startActivity(playingIntent);
             }
         });
 
@@ -35,10 +35,10 @@ public class PlayingActivity extends AppCompatActivity {
 
         //Set a clicklistener on that button
         albums.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Albums button clicked on.
+            // The code in this method will be executed when the Albums button is clicked on.
             @Override
             public void onClick(View view) {
-                Intent albumsIntent = new Intent(PlayingActivity.this, AlbumsActivity.class);
+                Intent albumsIntent = new Intent(PlaylistsActivity.this, AlbumsActivity.class);
                 startActivity(albumsIntent);
             }
         });
@@ -51,8 +51,21 @@ public class PlayingActivity extends AppCompatActivity {
             // The code in this method will be executed when the Artists button is clicked on.
             @Override
             public void onClick(View view) {
-                Intent artistsIntent = new Intent(PlayingActivity.this, ArtistsActivity.class);
+                Intent artistsIntent = new Intent(PlaylistsActivity.this, ArtistsActivity.class);
                 startActivity(artistsIntent);
+            }
+        });
+
+        //Find view that shows Search music library button
+        Button search = (Button) findViewById(R.id.btnSearch);
+
+        //Set a clicklistener on that button
+        search.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the  Search music library button is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent searchIntent = new Intent(PlaylistsActivity.this, SearchActivity.class);
+                startActivity(searchIntent);
             }
         });
 
@@ -64,7 +77,7 @@ public class PlayingActivity extends AppCompatActivity {
             // The code in this method will be executed when the home button is clicked on.
             @Override
             public void onClick(View view) {
-                Intent mainIntent = new Intent(PlayingActivity.this, MainActivity.class);
+                Intent mainIntent = new Intent(PlaylistsActivity.this, MainActivity.class);
                 startActivity(mainIntent);
             }
         });

@@ -11,10 +11,54 @@
     <style name="Title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/marginTitle</item>
         <item name="android:layout_marginLeft">@dimen/marginTitle</item>
+        <item name="android:layout_marginTop">@dimen/marginTitle</item>
+        <item name="android:layout_marginBottom">@dimen/marginTitle</item>
         <item name="android:textSize">@dimen/sizeTitle</item>
         <item name="android:textColor">@color/colorTitle</item>
+    </style>
+
+    <style name="TitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorTitleBar</item>
+    </style>
+
+    <style name="IconApp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginLeftIcon</item>
+        <item name="android:layout_marginTop">@dimen/marginTopIcon</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/paddingTextView</item>
+        <item name="android:textSize">@dimen/sizeTextView</item>
+    </style>
+
+    <style name="TextActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sizeTextActivities</item>
+    </style>
+
+    <style name="TextActivityInfo" parent="TextActivity">
+         <item name="android:layout_margin">@dimen/paddingBtn</item>
+    </style>
+
+    <style name="TextActivityDetails" parent="TextActivity">
+        <item name="android:layout_marginLeft">@dimen/paddingBtn</item>
+        <item name="android:layout_marginTop">@dimen/marginTextDetails</item>
+        <item name="android:layout_marginRight">@dimen/paddingBtn</item>
+        <item name="android:layout_marginBottom">@dimen/marginTextDetails</item>
+    </style>
+
+    <style name="Line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/heightLine</item>
+        <item name="android:background">@color/colorBtnText</item>
     </style>
 
     <style name="btn">
@@ -26,6 +70,15 @@
         <item name="android:padding">@dimen/paddingBtn</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/colorBtnText</item>
+    </style>
+
+    <style name="btnHome">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
     <style name="img">

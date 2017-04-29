@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
     <string name="title">Music</string>
-    <string name="now_playing">Now playing</string>
-    <string name="playing">Playing</string>
+    <string name="now_playing">Now playing - Song details</string>
+    <string name="playing">Now playing</string>
     <string name="albums">Albums</string>
     <string name="playlists">Playlists</string>
     <string name="artists">Artists</string>
     <string name="search">Search</string>
+    <string name="search_text">Search music library</string>
+    <string name="results">Results:</string>
     <string name="buy_online">Buy online</string>
-    <string name="playing_info">This screen show information about the track playing. </string>
+    <string name="playing_info">This screen show information about the track playing. To extract meta-data from the file, the class MediaMetaDataRetriever can be used.</string>
+    <string name="song">Song: </string>
+    <string name="artist">Artist: </string>
+    <string name="album">Album: </string>
+    <string name="albums_info">This screen shows a list of the albums in the music library using a ListView and the user can click on it to get a list of the songs of that album. The class MediaStore can be used for this task and more specifically MediaStore.Audio.Albums.</string>
+    <string name="artists_info">This screen shows a list of the artists in the music library using a ListView and the user can click on it to get a list of the songs of that artist. The class MediaStore can be used for this task and more specifically MediaStore.Audio.Artists.</string>
+    <string name="playlists_info">This screen shows a list of the playlists in the music library using a ListView and the user can click on it to get a list of the songs of that playlist. The class MediaStore can be used for this task and more specifically MediaStore.Audio.Playlists.</string>
+    <string name="search_info">The search uses MediaStore class to search the music library. Search music library:</string>
 </resources>

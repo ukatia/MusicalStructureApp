@@ -18,7 +18,7 @@
 
                 <TextView
                     style="@style/Title"
-                    android:text="@string/now_playing" />
+                    android:text="@string/albums" />
 
             </LinearLayout>
 
@@ -26,19 +26,12 @@
 
             <TextView
                 style="@style/TextActivityInfo"
-                android:text="@string/playing_info" />
+                android:text="@string/albums_info" />
 
-            <TextView
-                style="@style/TextActivityDetails"
-                android:text="@string/song" />
-
-            <TextView
-                style="@style/TextActivityDetails"
-                android:text="@string/album" />
-
-            <TextView
-                style="@style/TextActivityDetails"
-                android:text="@string/artist" />
+            <ListView
+                android:id="@+id/list_albums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,18 +40,26 @@
                 android:gravity="center">
 
                 <Button
+                    android:id="@+id/btnNowPlaying"
+                    style="@style/btn"
+                    android:background="@drawable/border"
+                    android:drawableTop="@drawable/play"
+                    android:text="@string/playing" />
+
+                <Button
                     android:id="@+id/btnPlaylists"
                     style="@style/btn"
                     android:background="@drawable/border"
                     android:drawableTop="@drawable/playlists"
                     android:text="@string/playlists" />
 
-                <Button
-                    android:id="@+id/btnAlbums"
-                    style="@style/btn"
-                    android:background="@drawable/border"
-                    android:drawableTop="@drawable/albums"
-                    android:text="@string/albums" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginTopImg"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/btnArtists"
@@ -67,8 +68,13 @@
                     android:drawableTop="@drawable/artists"
                     android:text="@string/artists" />
 
+                <Button
+                    android:id="@+id/btnSearch"
+                    style="@style/btn"
+                    android:background="@drawable/border"
+                    android:drawableTop="@drawable/search"
+                    android:text="@string/search" />
             </LinearLayout>
-
         </LinearLayout>
 
         <ImageButton
