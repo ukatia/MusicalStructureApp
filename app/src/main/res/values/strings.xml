@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="title">Music</string>
+    <string name="now_playing">Now playing</string>
+    <string name="playing">Playing</string>
+    <string name="albums">Albums</string>
+    <string name="playlists">Playlists</string>
+    <string name="artists">Artists</string>
+    <string name="search">Search</string>
+    <string name="buy_online">Buy online</string>
+    <string name="playing_info">This screen show information about the track playing. </string>
+</resources>
